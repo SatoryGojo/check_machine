@@ -53,7 +53,7 @@ class CashRegisterView(APIView):
             f.write(pdf)
 
 
-        qr = qrcode.make(f"{request.build_absolute_uri()}/media/{file_name}")
+        qr = qrcode.make(f"{request.build_absolute_uri('/')}media/{file_name}")
         qr_path = os.path.join(media_dir, f"{file_name}_qr.png")
         qr.save(qr_path)
 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Чек</title>
+  <meta charset="UTF-8">
+</head>
+<body style="text-align: center;">
+    <h1>Чек</h1>
+    <ul style="list-style: none;">
+      {% for item in items %}
+        </li><h3>{{ item.title }} - {{ item.price }}</h3><li>
+      {% endfor %}
+    </ul>
+
+
+      <h2>Итог: {{ amount }}</h2>
+      <h3>Время: {{ time }}</h3>
+    
+</body>
+</html>
